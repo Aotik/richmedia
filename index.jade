@@ -1,0 +1,51 @@
+//output: index.php
+doctype html
+html(lang="en")
+	head
+		link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css")
+		link(rel="stylesheet", href="css/rm.css")
+		link(rel="stylesheet", href="css/style.css")
+		link(rel="stylesheet", href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
+		link(rel="stylesheet", href="//fonts.googleapis.com/css?family=Roboto:400,300,500,700")
+		script(src="//code.jquery.com/jquery-2.2.1.min.js")
+		script(src="ele.js")
+	body
+		.wrapper
+			nav
+				.title
+					h3 Richie
+				span#msg
+				ul.xnav
+					li
+						a.nav-cta.append-rm Add
+					li
+						a.nav-cta.copy-rm Copy All
+					li 
+						a.nav-cta.copy-html Copy HTML
+			.col-left
+				.c-field
+					input.c-header(type="text")
+					label Content Header
+				.c-field
+					input.c-img(type="text")
+					label Image Link
+				.c-field
+					input.c-alt(type="text")
+					label Image Alt Tag
+				.c-field
+					input#txt-styling(type="text")
+				.c-field.t-full
+					textarea.c-body
+					label Content
+
+			.col-right
+				pre
+					span.preview-d Output
+					span.save-rm save
+					span.undo-rm
+						i.icon.ion-reply
+					code#output.output(contenteditable="true", spellcheck="false")
+				.preview-co
+					span.de Preview
+					.preview
+		

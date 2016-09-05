@@ -1,0 +1,215 @@
+@import 'jeet'
+@import 'nib'
+
+cfont = "Open Sans"
+
+*
+	box-sizing border-box
+	font-smooth always
+	-webkit-font-smoothing antialiased
+	outline 0
+	padding 0
+	margin 0
+
+::-webkit-scrollbar {
+		width: 10px;
+}
+
+::-webkit-scrollbar-track {
+		background-color transparent
+}
+
+::-webkit-scrollbar-thumb {
+		background-color #BEC1C4
+}
+
+html, .col-right
+	height 100%
+	width 100%
+	min-height 100% !important
+
+body
+	height 100%
+	width 100%
+	text-rendering optimizeLegibility
+	-moz-osx-font-smoothing grayscale
+	-webkit-font-smoothing antialiased
+	text-shadow 1px 1px 1px rgba(0, 0, 0, 0.004)
+	font-family 'Roboto'
+
+.wrapper
+	span(1/1)
+	width 100%
+	min-height 100%
+	position relative
+	min-width 550px
+	height 100%
+	padding 60px 0 0 0
+
+nav
+	span(1/1)
+	height 60px
+	background-color #0076F1
+	position fixed
+	padding 0 25px
+	box-shadow 0 0 5px rgba(57,70,78,0.6)
+	top 0
+	left 0
+	line-height 60px
+	z-index 1100
+	#msg
+		align(both)
+		color lighten(#0076F1, 50%)
+	.nav-cta
+		padding 7px 25px
+		background-color darken(#0076F1, 12%)
+		color #000
+		border-radius 4px
+		color lighten(#0076F1, 38%)
+		cursor pointer
+		transition all 0.3s ease
+		box-shadow 0 0 3px rgba(57,70,78,0.3)
+		&:hover
+			background-color darken(#0076F1, 14%)
+			color lighten(#0076F1, 46%)
+	.title
+		display inline-block
+		vertical-align top
+		height 100%
+		margin-left -25px
+		background-color rgb(0,118,241)
+		h3
+			margin 0
+			color #fff
+			font-size 24px
+			padding 0 80px 0 25px
+	.xnav
+		list-style none
+		padding 0
+		margin 0
+		font-size 0
+		float right
+		display inline-block
+		vertical-align top
+		li
+			font-size 14px
+			color #5F6771
+			display inline-block
+			& + li
+				margin-left 12px
+.col-left
+	span(1/2)
+	height 100%
+	border-right 1px solid #EEE
+.col-right
+	position relative
+	span(1/2)
+	height 100%
+
+.c-field
+	span(1/1)
+	position relative
+	label
+		font-size 13px
+		font-weight 500
+		display block
+		color #C8CFD1
+		absolute top 13px left 25px
+
+input
+	padding 37px 25px 25px 25px
+	font-size 16px
+	border 0
+	transition border-color 0.3s ease
+	border-bottom 1px solid #E9EDF1
+	placeholder((font-style normal) (font-weight 300) (color #BDC5C8))
+	width 100%
+	&:focus
+		border-color #0076F1
+		& + label
+			color #0076F1
+.t-full
+	height calc(100% - 252px)
+textarea
+	padding 37px 25px 25px 25px
+	font-size 16px
+	border 0
+	border-bottom 1px solid #E9EDF1
+	resize none
+	height 100%
+	transition border-color 0.3s ease
+	span(1/1)
+	&:focus
+		border-color #0076F1
+		& + label
+			color #0076F1
+.btn-gp
+	span(1/1)
+#txt-styling
+	absolute top left -9999px
+.preview-d
+	color darken(#F4F5F6, 24%)
+	fixed top 80px
+.save-rm
+	padding 6px 8px
+	display none
+	fixed top 74px right 64px
+	background-color darken(rgba(#F04C4C,.37), 5%)
+	color darken(#FA4C4C, 40%)
+	transition 0.3s ease all
+	cursor pointer
+	border-radius 4px
+	line-height 16px
+	&:hover
+		background-color darken(rgba(#F04C4C,.57), 5%)
+		color darken(#F04C4C, 34%)
+.undo-rm
+	padding 3px 8px
+	fixed top 74px right 14px
+	border-radius 4px
+	background-color rgba(#F4F5F6,.47)
+	color darken(#F4F5F6, 30%)
+	transition 0.3s ease all
+	cursor pointer
+	overflow hidden
+	height 28px
+	i
+		font-size 18px
+	&:hover
+		background-color darken(rgba(#F4F5F6,.77), 7%)
+		color darken(#F4F5F6, 34%)
+pre
+	span(1/1)
+	position relative
+	background-color #F4F5F6
+	padding 45px 20px 20px 20px
+	white-space -moz-pre-wrap
+	white-space -o-pre-wrap
+	word-wrap break-word
+	overflow hidden
+	margin 0
+	overflow-y auto
+	height 40%
+	max-height 40%
+code
+	outline 0
+.preview-co
+	span(1/1)
+	border-top 1px solid #E8E8E8
+	padding 20px
+	overflow auto
+	height 60%
+	max-height 60%
+	span.de
+		span(1/1)
+		color darken(#F4F5F6, 24%)
+#preview
+	absolute top 220px left 20px
+	display none
+	border 1px solid #BDC5C8
+	z-index 1000
+	background-color #fff
+	box-shadow 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19)
+img
+	max-width 780px
+	max-height 400px
